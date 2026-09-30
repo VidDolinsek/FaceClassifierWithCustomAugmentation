@@ -1,0 +1,27 @@
+# Local Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local credentials and editor settings
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+.DS_Store
+
+# Recreate with 2d_augment.py
+/augmented_personnel/
+
+# Portraits are included individually in personnel/
+/personnel.zip
+
+# Downloadable pretrained models; retain custom checkpoints in runs/
+/yolo*.pt
+
+# Generated inference output and subsequent training runs
+/test_annotated.jpg
+/runs/classify/train[0-9]*/
